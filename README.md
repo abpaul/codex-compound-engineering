@@ -84,6 +84,10 @@ It also enforces that project `AGENTS.md` is either copied from global baseline 
 | `$workflow-review` | Review changes and prioritize findings | sprint follow-up section |
 | `$workflow-compound` | Document solved problems | `docs/solutions/**/*.md` |
 | `$workflow-autonomous` | Run end-to-end with minimal handoffs | full pipeline output |
+| `$frontend-design` | Design and implement distinctive frontend UI systems | UI code + `docs/design-memory.md` |
+| `$design-fidelity` | Iterate visual parity against design intent | mismatch/fidelity passes + screenshots |
+| `$review-frontend-quality` | Review frontend correctness and visual regressions | prioritized findings |
+| `$web-automation-testing` | Capture browser evidence for changed UI surfaces | screenshots + interaction checks |
 
 ## Scenario playbooks
 
@@ -99,6 +103,38 @@ Notes:
 
 - For existing projects, keep legacy `docs/plans`/`todos` as archive and start new work in `docs/sprints/`.
 - Skip `$workflow-discovery` when requirements are already explicit.
+
+## Using `$frontend-design`
+
+Recommended invocation:
+
+```bash
+$frontend-design "Redesign the billing dashboard for finance managers. Keep it data-dense, trustworthy, and calm."
+```
+
+What the skill does:
+
+1. Auto-harvests local context (`AGENTS.md`, PRD/design docs, sprint docs, existing tokens/components).
+2. Builds a design-input coverage map and asks targeted questions only for missing critical inputs.
+3. Produces domain exploration outputs (concepts, color world, signature element, defaults to reject).
+4. Defines semantic color/type/spacing tokens and implements component-by-component.
+5. Runs a polish loop with:
+   - `$design-fidelity`
+   - `$review-frontend-quality`
+   - `$web-automation-testing`
+6. Persists decisions in `docs/design-memory.md` for consistency across future screens.
+
+## Can it create a good project palette automatically?
+
+Short answer: yes, conditionally.
+
+- It can generate a strong, project-specific palette automatically when it can infer enough context from brand/design/product artifacts in the repo.
+- If required palette context is missing (brand constraints, audience/tone, references), it asks focused questions before finalizing colors.
+- It uses a tokenized palette workflow (semantic tokens + state variants + contrast checks), which improves consistency and accessibility.
+- It does not guarantee "perfect" brand fit without source constraints; when brand specificity matters, provide:
+  - required/forbidden colors
+  - 2-3 reference UIs you like and one you dislike
+  - desired tone adjectives (3-5)
 
 ## Autonomous mode for rough briefs
 
