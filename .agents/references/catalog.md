@@ -1,56 +1,38 @@
-# Compound Engineering Skill Catalog
+# Compound Engineering Skill Catalog (Consolidated)
 
-- Native skills copied: 15
-- Commands converted to skills: 23
-- Agents converted to skills: 23
-- Total installed skills: 61
+- Previous skill count: 63
+- Consolidated skill count: 24
+- Reduction: 39 skills (~62%)
 
-## Converted Command Skills
-- `$agent-native-audit` (from `/agent-native-audit`)
-- `$changelog` (from `/changelog`)
-- `$create-agent-skill` (from `/create-agent-skill`)
-- `$deepen-plan` (from `/deepen-plan`)
-- `$deploy-docs` (from `/deploy-docs`)
-- `$feature-video` (from `/feature-video`)
-- `$generate-command` (from `/generate_command`)
-- `$heal-skill` (from `/heal-skill`)
-- `$lfg` (from `/lfg`)
-- `$release-docs` (from `/release-docs`)
-- `$reproduce-bug` (from `/reproduce-bug`)
-- `$resolve-parallel` (from `/resolve_parallel`)
-- `$resolve-todo-parallel` (from `/resolve_todo_parallel`)
-- `$slfg` (from `/slfg`)
-- `$technical-review` (from `/technical_review`)
-- `$test-browser` (from `/test-browser`)
-- `$test-xcode` (from `/test-xcode`)
-- `$triage` (from `/triage`)
-- `$workflows-brainstorm` (from `/workflows:brainstorm`)
-- `$workflows-compound` (from `/workflows:compound`)
-- `$workflows-plan` (from `/workflows:plan`)
-- `$workflows-review` (from `/workflows:review`)
-- `$workflows-work` (from `/workflows:work`)
+## Canonical Skills
 
-## Converted Agent Skills
-- `$agent-native-reviewer`
-- `$architecture-strategist`
-- `$best-practices-researcher`
-- `$bug-reproduction-validator`
-- `$code-simplicity-reviewer`
-- `$data-integrity-guardian`
-- `$deployment-verification-agent`
-- `$design-implementation-reviewer`
-- `$design-iterator`
-- `$figma-design-sync`
-- `$framework-docs-researcher`
-- `$git-history-analyzer`
-- `$julik-frontend-races-reviewer`
-- `$kieran-typescript-reviewer`
-- `$learnings-researcher`
-- `$lint`
-- `$pattern-recognition-specialist`
-- `$performance-oracle`
-- `$pr-comment-resolver`
-- `$repo-research-analyst`
-- `$schema-drift-detector`
-- `$security-sentinel`
-- `$spec-flow-analyzer`
+1. `$project-bootstrap`
+2. `$workflow-discovery`
+3. `$workflow-plan`
+4. `$workflow-work`
+5. `$workflow-review`
+6. `$workflow-compound`
+7. `$workflow-autonomous`
+8. `$review-security-performance`
+9. `$review-data-release`
+10. `$review-frontend-quality`
+11. `$review-comment-resolution`
+12. `$bug-investigation`
+13. `$research-local`
+14. `$research-external`
+15. `$frontend-design`
+16. `$design-fidelity`
+17. `$agent-native-suite`
+18. `$ruby-rails-authoring`
+19. `$docs-publishing`
+20. `$skill-authoring`
+21. `$web-automation-testing`
+22. `$mobile-testing`
+23. `$repo-tooling`
+24. `$cloud-transfer`
+
+## Consolidation Notes
+
+- Narrow overlapping specialist skills were merged into broader composable workflows.
+- Legacy slash command compatibility is preserved through mappings in `.agents/references/command-map.md`.
+- Use a clean reinstall of global skills after consolidation to remove deprecated directories.
