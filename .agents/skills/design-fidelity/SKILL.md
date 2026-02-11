@@ -7,34 +7,21 @@ description: "Drive implementation fidelity against design intent through compar
 
 Use this skill after implementation exists and you need tighter visual/interaction fidelity.
 
-## Required Inputs
+## Modes
 
-1. Source of truth design artifact (Figma link, screenshots, or style guide)
-2. Target implementation routes/components
-3. Breakpoints and states to verify
-
-## Data Gathering Workflow
-
-1. Auto-harvest design references from:
-   - `docs/design-guidelines.md`
-   - sprint docs
-   - linked issues/PRs
-   - attached screenshots
-2. If the source design artifact is missing, ask the user for it before continuing.
-3. Build a comparison checklist across:
-   - layout and spacing
-   - typography
-   - color tokens and contrast behavior
-   - interaction states (hover/focus/active/disabled/loading/error)
-   - motion behavior and reduced-motion fallback
+- `quick`: one comparison pass on highest-impact screens
+- `deep`: multi-pass across all breakpoints/states until score threshold
 
 ## Iteration Workflow
 
-1. Compare implementation against source design.
-2. List mismatches by severity and user impact.
-3. Apply corrections in small batches.
-4. Re-check with screenshots at desktop and mobile breakpoints.
-5. Repeat until acceptable or blocked by explicit constraints.
+1. Load minimal design reference and target surface context.
+2. If source design artifact is missing, ask user before continuing.
+3. Compare implementation against source design for:
+   - layout/spacing
+   - typography
+   - token/contrast behavior
+   - interaction states
+4. Apply corrections in small batches and re-check with screenshots.
 
 ## Fidelity Scorecard
 
@@ -46,7 +33,7 @@ Score each pass (1-5):
 4. Interaction-state fidelity
 5. Motion fidelity
 
-Treat any category below 4 as requiring another correction pass.
+In `deep` mode, treat any category below 4 as requiring another pass.
 
 ## Output Requirements
 

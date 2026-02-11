@@ -1,8 +1,8 @@
 # Compound Engineering Skill Catalog (Consolidated)
 
 - Previous skill count: 63
-- Consolidated skill count: 25
-- Reduction: 38 skills (~60%)
+- Consolidated skill count: 26
+- Reduction: 37 skills (~59%)
 
 ## Canonical Skills
 
@@ -14,23 +14,24 @@
 6. `$workflow-review`
 7. `$workflow-compound`
 8. `$workflow-autonomous`
-9. `$review-security-performance`
-10. `$review-data-release`
-11. `$review-frontend-quality`
-12. `$review-comment-resolution`
-13. `$bug-investigation`
-14. `$research-local`
-15. `$research-external`
-16. `$frontend-design`
-17. `$design-fidelity`
-18. `$agent-native-suite`
-19. `$ruby-rails-authoring`
-20. `$docs-publishing`
-21. `$skill-authoring`
-22. `$web-automation-testing`
-23. `$mobile-testing`
-24. `$repo-tooling`
-25. `$cloud-transfer`
+9. `$frontend-ship`
+10. `$review-security-performance`
+11. `$review-data-release`
+12. `$review-frontend-quality`
+13. `$review-comment-resolution`
+14. `$bug-investigation`
+15. `$research-local`
+16. `$research-external`
+17. `$frontend-design`
+18. `$design-fidelity`
+19. `$agent-native-suite`
+20. `$ruby-rails-authoring`
+21. `$docs-publishing`
+22. `$skill-authoring`
+23. `$web-automation-testing`
+24. `$mobile-testing`
+25. `$repo-tooling`
+26. `$cloud-transfer`
 
 ## Consolidation Notes
 

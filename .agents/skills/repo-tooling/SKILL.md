@@ -9,3 +9,4 @@ description: "Manage repository workflow utilities including worktrees and linti
 
 - worktree lifecycle management
 - lint and quality checks before merge
+- skill token budget linting via `scripts/lint-skill-tokens.sh`

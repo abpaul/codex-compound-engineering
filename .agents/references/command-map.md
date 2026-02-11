@@ -10,6 +10,7 @@ Legacy slash commands mapped to consolidated Codex skills.
 | `/deepen-plan` | `$workflow-plan` |
 | `/deploy-docs` | `$docs-publishing` |
 | `/feature-video` | `$docs-publishing` |
+| `/frontend-ship` | `$frontend-ship` |
 | `/generate_command` | `$skill-authoring` |
 | `/heal-skill` | `$skill-authoring` |
 | `/lfg` | `$workflow-autonomous` |

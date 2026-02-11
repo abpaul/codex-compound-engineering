@@ -7,12 +7,10 @@ description: "Review frontend correctness including race conditions, lifecycle i
 
 Use this skill for implementation review before merge, especially after UI changes.
 
-## Data Gathering Workflow
+## Token Discipline
 
-1. Auto-harvest affected files from git diff.
-2. Identify impacted user flows and component states.
-3. Pull existing accessibility and design constraints from AGENTS/design docs.
-4. If critical review context is missing (for example, expected behavior for a state), ask the user for clarification.
+- Start from git diff and touched components only.
+- Expand scope only if issues imply broader systemic risk.
 
 ## Checklist
 

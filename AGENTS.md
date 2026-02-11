@@ -67,9 +67,14 @@ This file is intended to be used as a global `AGENTS.md` for Codex across device
 - Always prefer canonical workflow skills (`$workflow-*`) over historical `$workflows-*` names.
 - Keep `docs/sprints/` as the single source of truth for plan + task execution.
 - Document durable learnings in `docs/solutions/` immediately after fixes are verified.
+- Follow token discipline:
+  - load only required skill references first (progressive disclosure)
+  - prefer `fast` mode and escalate to `deep` only when quality/risk demands it
+  - run `scripts/lint-skill-tokens.sh` before major skill changes
 - Load only needed references to keep context lean:
   - `.agents/references/command-map.md`
   - `.agents/references/catalog.md`
+  - `.agents/references/token-optimization.md`
   - `.agents/references/styleguides/rails.md`
   - `.agents/references/styleguides/stimulus.md`
   - `.agents/references/styleguides/hotwire-turbo.md`
@@ -127,6 +132,7 @@ The repository ships with these skills. Use the "use when" guidance to route qui
 | `$review-comment-resolution` | Resolving PR/review follow-up backlog | Batched resolution plan |
 | `$bug-investigation` | Reproducing and isolating bugs | Repro steps + likely root cause |
 | `$frontend-design` | Building production-grade UI fast | Implemented UI + design rationale |
+| `$frontend-ship` | Orchestrating frontend design->review->evidence in one flow | End-to-end frontend delivery summary |
 | `$design-fidelity` | Closing gaps between design intent and implementation | Diff/fix recommendations |
 | `$agent-native-suite` | Designing/auditing agent-native capabilities | Agent parity audit + design guidance |
 | `$ruby-rails-authoring` | Rails/gem authoring with strong conventions | Rails-aligned code patterns |

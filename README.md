@@ -85,9 +85,34 @@ It also enforces that project `AGENTS.md` is either copied from global baseline 
 | `$workflow-compound` | Document solved problems | `docs/solutions/**/*.md` |
 | `$workflow-autonomous` | Run end-to-end with minimal handoffs | full pipeline output |
 | `$frontend-design` | Design and implement distinctive frontend UI systems | UI code + `docs/design-memory.md` |
+| `$frontend-ship` | Orchestrate frontend design + quality + browser evidence | end-to-end frontend delivery |
 | `$design-fidelity` | Iterate visual parity against design intent | mismatch/fidelity passes + screenshots |
 | `$review-frontend-quality` | Review frontend correctness and visual regressions | prioritized findings |
 | `$web-automation-testing` | Capture browser evidence for changed UI surfaces | screenshots + interaction checks |
+
+## Token optimization
+
+This repo now uses mode-based and progressive-loading patterns to reduce context bloat:
+
+- `fast` first, escalate to `deep` only when needed
+- load only required assets/references for the current mode
+- use diff-scoped checks before broad scans
+
+Reference:
+
+- `.agents/references/token-optimization.md`
+
+Lint skill budgets:
+
+```bash
+./scripts/lint-skill-tokens.sh
+```
+
+Strict mode:
+
+```bash
+./scripts/lint-skill-tokens.sh --strict
+```
 
 ## Scenario playbooks
 
@@ -98,6 +123,7 @@ It also enforces that project `AGENTS.md` is either copied from global baseline 
 | New feature | `$workflow-discovery` (if needed) -> `$workflow-plan` -> `$workflow-work` -> `$workflow-review` -> `$workflow-compound` |
 | Bug fix | `$bug-investigation` -> `$workflow-plan` -> `$workflow-work` -> `$workflow-review` -> `$workflow-compound` |
 | Frontend design/refactor | `$workflow-discovery` -> `$frontend-design` -> `$workflow-work` -> `$review-frontend-quality` -> `$design-fidelity` -> `$workflow-compound` |
+| Frontend end-to-end delivery | `$workflow-discovery` -> `$frontend-ship` -> `$workflow-compound` |
 
 Notes:
 
