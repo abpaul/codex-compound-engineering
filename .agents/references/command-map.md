@@ -18,13 +18,11 @@ Legacy slash commands mapped to consolidated Codex skills.
 | `/reproduce-bug` | `$bug-investigation` |
 | `/resolve_parallel` | `$review-comment-resolution` |
 | `/resolve_pr_parallel` | `$review-comment-resolution` |
-| `/resolve_todo_parallel` | `$review-comment-resolution` |
 | `/setup-project-docs` | `$setup-project-docs` |
 | `/slfg` | `$workflow-autonomous` |
 | `/technical_review` | `$workflow-review` |
 | `/test-browser` | `$web-automation-testing` |
 | `/test-xcode` | `$mobile-testing` |
-| `/triage` | `$review-comment-resolution` |
 | `/workflows:brainstorm` | `$workflow-discovery` |
 | `/workflows:compound` | `$workflow-compound` |
 | `/workflows:plan` | `$workflow-plan` |
