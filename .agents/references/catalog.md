@@ -1,35 +1,36 @@
 # Compound Engineering Skill Catalog (Consolidated)
 
 - Previous skill count: 63
-- Consolidated skill count: 24
-- Reduction: 39 skills (~62%)
+- Consolidated skill count: 25
+- Reduction: 38 skills (~60%)
 
 ## Canonical Skills
 
-1. `$project-bootstrap`
-2. `$workflow-discovery`
-3. `$workflow-plan`
-4. `$workflow-work`
-5. `$workflow-review`
-6. `$workflow-compound`
-7. `$workflow-autonomous`
-8. `$review-security-performance`
-9. `$review-data-release`
-10. `$review-frontend-quality`
-11. `$review-comment-resolution`
-12. `$bug-investigation`
-13. `$research-local`
-14. `$research-external`
-15. `$frontend-design`
-16. `$design-fidelity`
-17. `$agent-native-suite`
-18. `$ruby-rails-authoring`
-19. `$docs-publishing`
-20. `$skill-authoring`
-21. `$web-automation-testing`
-22. `$mobile-testing`
-23. `$repo-tooling`
-24. `$cloud-transfer`
+1. `$setup-project-docs`
+2. `$project-bootstrap`
+3. `$workflow-discovery`
+4. `$workflow-plan`
+5. `$workflow-work`
+6. `$workflow-review`
+7. `$workflow-compound`
+8. `$workflow-autonomous`
+9. `$review-security-performance`
+10. `$review-data-release`
+11. `$review-frontend-quality`
+12. `$review-comment-resolution`
+13. `$bug-investigation`
+14. `$research-local`
+15. `$research-external`
+16. `$frontend-design`
+17. `$design-fidelity`
+18. `$agent-native-suite`
+19. `$ruby-rails-authoring`
+20. `$docs-publishing`
+21. `$skill-authoring`
+22. `$web-automation-testing`
+23. `$mobile-testing`
+24. `$repo-tooling`
+25. `$cloud-transfer`
 
 ## Consolidation Notes
 

@@ -1,4 +1,4 @@
-# Initial Implementation Plan
+# Initial Implementation Sprint
 
 ## 1. Scope Snapshot
 
@@ -22,26 +22,48 @@
 - QA/verification:
 - Rollout/operations:
 
-## 4. Dependencies
+## 4. Task Board (Plan + Execution)
+
+- [ ] S1-T01
+  - Description:
+  - PRD Traceability:
+  - Dependencies:
+  - Acceptance Criteria:
+- [ ] S1-T02
+  - Description:
+  - PRD Traceability:
+  - Dependencies:
+  - Acceptance Criteria:
+- [ ] S1-T03
+  - Description:
+  - PRD Traceability:
+  - Dependencies:
+  - Acceptance Criteria:
+
+## 5. Dependencies
 
 - Internal:
 - External:
 - Blocking assumptions:
 
-## 5. Verification Strategy
+## 6. Verification Strategy
 
 - Unit/integration coverage:
 - Manual QA scenarios:
 - Performance/security checks:
 - UAT/signoff criteria:
 
-## 6. Risks and Contingencies
+## 7. Risks and Contingencies
 
 - Risk:
 - Mitigation:
 - Fallback:
 
-## 7. Open Questions
+## 8. Review Findings Queue
+
+- [ ] None yet
+
+## 9. Open Questions
 
 | Question | Owner | Due Date | Status |
 |---|---|---|---|

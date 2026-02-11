@@ -1,13 +1,13 @@
 ---
 name: review-comment-resolution
-description: "Resolve PR/review/todo comments systematically, including parallel resolution workflows."
+description: "Resolve PR/review follow-up items systematically, including parallel resolution workflows."
 ---
 
 # Review Comment Resolution
 
 ## Workflow
 
-1. Gather unresolved review comments/todos.
+1. Gather unresolved review comments and sprint follow-up items.
 2. Group by dependency and severity.
 3. Resolve independent items in parallel where safe.
 4. Re-verify unresolved thread count.

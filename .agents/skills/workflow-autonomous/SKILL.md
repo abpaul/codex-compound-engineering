@@ -14,6 +14,11 @@ description: "Run end-to-end autonomous execution pipelines (plan -> work -> rev
 5. Resolve findings
 6. `workflow-compound`
 
+## Artifact Policy
+
+- Keep plan + execution + follow-up context in a single sprint file under `docs/sprints/`.
+- Avoid splitting tracking into separate todo directories unless explicitly requested.
+
 ## Parallelization Guidance
 
 - Run independent review and test streams in parallel.

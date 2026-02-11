@@ -9,7 +9,7 @@ One-paragraph description of what this project does and who it serves.
 - Primary docs:
   - `docs/prd.md`
   - `docs/design-guidelines.md`
-  - `docs/plans/initial-implementation-plan.md`
+  - `docs/sprints/initial-implementation-sprint.md`
 
 ## Tech Stack
 
@@ -56,9 +56,8 @@ One-paragraph description of what this project does and who it serves.
 
 - `app/` or `src/`: application code
 - `test/` or `spec/`: tests
-- `docs/`: PRD, plans, design guidance
+- `docs/`: PRD, sprints, design guidance, brainstorms, solutions
 - `scripts/`: tooling and automation
-- `todos/`: tracked work items
 
 ## Product Overview
 
@@ -70,9 +69,10 @@ One-paragraph description of what this project does and who it serves.
 ## Development Workflow
 
 1. Capture/review requirements in `docs/prd.md`
-2. Plan implementation in `docs/plans/`
+2. Plan and track execution in `docs/sprints/`
 3. Implement in small reviewable diffs
 4. Validate with tests and manual checks
+5. Capture solved learnings in `docs/solutions/`
 
 ## Design and UX
 

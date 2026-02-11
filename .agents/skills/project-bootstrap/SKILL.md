@@ -9,28 +9,28 @@ Use this skill to set up project docs and produce comprehensive foundation docum
 
 ## Workflow
 
-1. Ensure compound layout exists (`docs/brainstorms`, `docs/solutions`, `docs/plans`, `todos`, `AGENTS.md`).
+1. Ensure streamlined layout exists (`docs/brainstorms`, `docs/solutions`, `docs/sprints`, `AGENTS.md`).
+   - If missing, run `$setup-project-docs` first.
 2. Run a structured interview with the user using `assets/interview-question-bank.md`.
 3. Capture interview notes in `docs/brainstorms/YYYY-MM-DD-prd-discovery.md`.
 4. Generate:
    - `docs/prd.md` from `assets/prd-template.md`
    - `docs/design-guidelines.md` from `assets/design-guidelines-template.md`
    - `README.md` from `assets/readme-template.md`
-   - `docs/plans/initial-implementation-plan.md` from `assets/implementation-plan-template.md`
-5. Generate full MVP todo backlog from `docs/prd.md`:
+   - `docs/sprints/initial-implementation-sprint.md` from `assets/implementation-plan-template.md`
+5. Build full MVP task board in the sprint file from `docs/prd.md`:
    - cover every PRD functional requirement, critical non-functional requirement, and core user flow
-   - create todo files in `todos/` using `assets/mvp-todo-template.md`
-   - naming format: `{issue_id}-{status}-{priority}-{description}.md`
-   - default status: `ready` for fully defined work, `pending` for ambiguous work
-   - default priority: `p1` for MVP blockers, `p2` for supporting work, `p3` for post-MVP
-   - define dependencies explicitly via issue IDs to express execution order
+   - create sprint task IDs using format `S1-TXX`
+   - default status: unchecked (`[ ]`) for pending, checked (`[x]`) for complete
+   - define dependencies explicitly in the sprint doc to express execution order
    - include acceptance criteria traceable to PRD sections
-   - write `docs/plans/mvp-todo-mapping.md` with requirement-to-todo coverage matrix
+   - write `docs/sprints/mvp-requirement-mapping.md` with requirement-to-task coverage matrix
 6. Run a completeness pass:
    - no unresolved placeholders
    - measurable success criteria
    - explicit non-goals and open questions
    - no uncovered MVP requirements in the coverage matrix
+   - `AGENTS.md` includes a complete Available Skills section
 7. Review with user and revise until approved.
 
 ## Notes
@@ -38,4 +38,4 @@ Use this skill to set up project docs and produce comprehensive foundation docum
 - Ask one question at a time.
 - Summarize each section before proceeding.
 - Date-stamp docs with the current year (2026).
-- PRD should be sufficient for generating actionable MVP todos without additional invention.
+- PRD should be sufficient for generating actionable sprint tasks without additional invention.
