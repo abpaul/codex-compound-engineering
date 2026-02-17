@@ -10,8 +10,14 @@ Use this skill before planning implementation.
 ## Workflow
 
 1. Gather feature context and relevant repo patterns.
-2. Ask one question at a time to clarify goals, users, constraints, and success criteria.
-3. Propose 2-3 approaches with tradeoffs and recommendation.
-4. Write discovery output to `docs/brainstorms/YYYY-MM-DD-<topic>-brainstorm.md`.
-5. Validate the document for clarity, scope boundaries, and open questions.
-6. Hand off to `workflow-plan`.
+2. Confirm whether the default architecture baseline applies:
+   - Rails server-rendered app
+   - Phlex UI components
+   - Stimulus client behavior
+   - Turbo/Hotwire Native navigation
+   - MD3-inspired token system with project-owned palette/type/illustration
+3. Ask one question at a time to clarify goals, users, constraints, and success criteria.
+4. Propose 2-3 approaches with tradeoffs and recommendation.
+5. Write discovery output to `docs/brainstorms/YYYY-MM-DD-<topic>-brainstorm.md`.
+6. Validate the document for clarity, scope boundaries, and open questions.
+7. Hand off to `workflow-plan`.

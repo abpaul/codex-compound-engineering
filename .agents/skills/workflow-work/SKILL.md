@@ -12,8 +12,15 @@ description: "Execute plans into production-ready code with task tracking, incre
 3. If sprint tasks are incomplete, refine them in place before implementation:
    - ensure every MVP requirement and critical flow has at least one sprint task
    - encode dependencies directly in the sprint doc
-4. Implement in small logical increments.
-5. Run focused tests/lint after each increment.
-6. Mark completed sprint tasks in the source sprint doc.
-7. Record review follow-ups in the sprint's "Review Findings Queue".
-8. Prepare concise summary of completed work, tests run, and remaining risks.
+4. Preserve architecture baseline while implementing:
+   - Rails server-rendered responses
+   - Phlex reusable components
+   - Stimulus behavior
+   - Turbo/Hotwire Native-compatible navigation
+   - tokenized styling (no ad-hoc visual patches)
+5. Implement in small logical increments.
+6. Run focused tests/lint after each increment.
+7. Capture screenshot evidence for affected web/native shells when UI changes are included.
+8. Mark completed sprint tasks in the source sprint doc.
+9. Record review follow-ups in the sprint's "Review Findings Queue".
+10. Prepare concise summary of completed work, tests run, screenshot checks, and remaining risks.

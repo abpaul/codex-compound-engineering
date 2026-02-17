@@ -24,28 +24,37 @@ If the user cannot answer, mark as open question with owner and date.
 - What edge cases and failure states matter most?
 - What permissions or role boundaries exist?
 
-## 4) UX and Design Direction
+## 4) Architecture Baseline Confirmation
+
+- Should we follow the default Rails server-rendered architecture?
+- Are we committing to Phlex for reusable UI components?
+- Are we committing to Stimulus for client-side behavior?
+- Are Turbo/Hotwire Native required for navigation and mobile WebView integration?
+- If any answer is no, who is approving the deviation and why?
+
+## 5) UX, Branding, and Token Direction
 
 - What product principles should guide design decisions?
-- What visual direction or brand constraints must be respected?
-- Which UI patterns are required (tables, forms, dashboards, chat, etc.)?
+- What custom color palette direction should the product own?
+- What typography constraints or preferences must we follow?
+- What illustration style should we define?
 - What accessibility level is required (WCAG target, keyboard support, contrast)?
 
-## 5) Technical and Operational Constraints
+## 6) Technical and Operational Constraints
 
-- What stack constraints are fixed?
+- What stack constraints are fixed beyond the architecture baseline?
 - What integration dependencies are required?
 - What security, privacy, or compliance requirements apply?
 - What performance or reliability targets are non-negotiable?
 
-## 6) Delivery, Metrics, and Risks
+## 7) Delivery, Metrics, and Risks
 
 - What milestones and target dates should we plan around?
 - What leading and lagging metrics define success?
 - What are the top risks and mitigation ideas?
 - What rollout strategy is expected (phased, flag-based, beta, hard cutover)?
 
-## 7) README and Team Operating Needs
+## 8) README and Team Operating Needs
 
 - Who is the README for (new devs, operators, contributors)?
 - What setup commands must always work?

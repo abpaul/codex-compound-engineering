@@ -7,6 +7,14 @@ description: "Initialize project documentation and run a structured PRD/design/R
 
 Use this skill to set up project docs and produce comprehensive foundation documents.
 
+## Default Architecture Baseline
+
+- Rails-first, server-rendered application architecture.
+- Phlex for all reusable UI components.
+- Stimulus for client-side behavior.
+- Turbo/Hotwire Native for navigation and mobile WebView integration.
+- MD3-inspired token system for color/type/spacing/elevation/motion, with custom project palette/type/illustration.
+
 ## Workflow
 
 1. Ensure streamlined layout exists (`docs/brainstorms`, `docs/solutions`, `docs/sprints`, `AGENTS.md`).
@@ -18,6 +26,7 @@ Use this skill to set up project docs and produce comprehensive foundation docum
    - `docs/design-guidelines.md` from `assets/design-guidelines-template.md`
    - `README.md` from `assets/readme-template.md`
    - `docs/sprints/initial-implementation-sprint.md` from `assets/implementation-plan-template.md`
+   - enforce architecture baseline unless user explicitly approves deviation
 5. Build full MVP task board in the sprint file from `docs/prd.md`:
    - cover every PRD functional requirement, critical non-functional requirement, and core user flow
    - create sprint task IDs using format `S1-TXX`
@@ -39,3 +48,4 @@ Use this skill to set up project docs and produce comprehensive foundation docum
 - Summarize each section before proceeding.
 - Date-stamp docs with the current year (2026).
 - PRD should be sufficient for generating actionable sprint tasks without additional invention.
+- If a project intentionally deviates from the default architecture baseline, document rationale and approval in PRD + sprint docs.

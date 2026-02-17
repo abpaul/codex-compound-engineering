@@ -8,16 +8,23 @@ description: "Transform validated requirements into executable implementation pl
 ## Workflow
 
 1. Pull context from discovery docs and local patterns.
-2. Decide whether external research is needed based on risk/novelty.
-3. Produce or update a sprint document in `docs/sprints/` with:
+2. Validate architecture baseline assumptions early:
+   - Rails server-rendered flow
+   - Phlex component model
+   - Stimulus behavior model
+   - Turbo/Hotwire Native navigation model
+   - MD3-inspired token system with project-owned palette/type/illustration
+3. Decide whether external research is needed based on risk/novelty.
+4. Produce or update a sprint document in `docs/sprints/` with:
    - architecture approach
    - phased milestones
    - verification strategy
    - risks and mitigations
-4. Merge planning and execution context in the same sprint file:
+5. Merge planning and execution context in the same sprint file:
    - include an ordered task board with checkboxes and stable task IDs
    - encode dependencies inline so execution does not require separate todo files
    - include explicit acceptance criteria per task/workstream
-5. Deepen weak sections with targeted research.
-6. Ensure sprint tasks are actionable, testable, and sized for reviewable increments.
-7. Create/refresh `docs/sprints/mvp-requirement-mapping.md` showing PRD requirement -> sprint task IDs.
+6. Ensure the sprint includes token-system tasks and screenshot-polish verification across required shells.
+7. Deepen weak sections with targeted research.
+8. Ensure sprint tasks are actionable, testable, and sized for reviewable increments.
+9. Create/refresh `docs/sprints/mvp-requirement-mapping.md` showing PRD requirement -> sprint task IDs.

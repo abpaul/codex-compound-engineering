@@ -6,75 +6,74 @@
 - Design goals:
 - Primary UX outcomes:
 
-## 2. Design Principles
+## 2. Architecture Baseline
+
+- Rendering model: Rails server-rendered HTML
+- Component model: Phlex for all reusable UI components
+- Client behavior model: Stimulus controllers
+- Navigation/update model: Turbo Drive/Frames/Streams
+- Native shell model: Hotwire Native WebView integration
+- Approved deviations (if any):
+
+## 3. Design Principles
 
 - Principle 1:
 - Principle 2:
 - Principle 3:
 
-## 3. Information Architecture
+## 4. Token System (MD3-inspired, brand-owned)
+
+- Custom brand palette direction:
+- Custom typography direction:
+- Custom illustration direction:
+- Color role tokens (primary/surface/outline/status):
+- Type scale role tokens (display/headline/title/body/label):
+- Spacing scale tokens:
+- Elevation roles and usage:
+- Motion tokens (duration/easing) and reduced-motion fallback:
+
+## 5. Component Anatomy + APIs
+
+- Required Phlex component inventory:
+- MD3 anatomy mapping per component (container/content/outline/state layer/icon/supporting text):
+- Component API conventions (`variant`, `tone`, `size`, `state`):
+- Prohibited patterns (ad-hoc styling, raw values, per-screen forks):
+
+## 6. Information Architecture + Navigation
 
 - Primary navigation model:
 - Key screens/views:
-- Core object model:
+- Turbo Frame/Stream usage rules:
+- Hotwire Native navigation integration rules:
 
-## 4. Layout and Spacing
-
-- Grid approach:
-- Spacing scale:
-- Density defaults:
-- Mobile vs desktop behavior:
-
-## 5. Typography
-
-- Type families:
-- Scale/tokens:
-- Heading/body usage rules:
-- Readability constraints:
-
-## 6. Color and Visual System
-
-- Brand palette:
-- Semantic tokens (text, bg, border, success, warning, error):
-- Contrast requirements:
-- Light/dark mode policy:
-
-## 7. Components and Interaction Patterns
-
-- Required core components:
-- Component states (default/hover/focus/disabled/loading/error):
-- Form behavior and validation patterns:
-- Empty/loading/error state standards:
-
-## 8. Accessibility Standards
+## 7. Accessibility + Interaction Standards
 
 - Keyboard navigation:
 - Focus visibility:
 - Screen-reader expectations:
-- Motion/reduced-motion behavior:
+- Contrast requirements:
+- State coverage (default/hover/pressed/focus/disabled/loading/error):
 
-## 9. Content and Voice
-
-- Tone:
-- Labeling and microcopy style:
-- Error and confirmation message style:
-
-## 10. Responsive Behavior
+## 8. Responsive + Cross-Shell Behavior
 
 - Breakpoints:
 - Reflow rules:
 - Touch target minimums:
+- Browser vs native shell behavior differences (if any):
 
-## 11. Motion and Feedback
+## 9. Screenshot-Driven Polish Process
 
-- Allowed motion patterns:
-- Duration/easing defaults:
-- When to avoid animation:
+- Verification surfaces/routes:
+- Screenshot matrix (desktop/mobile/iOS shell/Android shell):
+- Rubric threshold target:
+- Iteration stop rule:
 
-## 12. QA Checklist
+## 10. QA Checklist
 
-- [ ] Contrast passes target WCAG level
-- [ ] Full keyboard path tested
-- [ ] Mobile layout validated
-- [ ] Loading/empty/error states implemented
-- [ ] Component states documented
+- [ ] Rails/Phlex/Stimulus/Turbo baseline followed (or deviation approved)
+- [ ] Token system defined for color/type/spacing/elevation/motion
+- [ ] Custom palette, typography, and illustration style documented
+- [ ] No ad-hoc styling in components/views
+- [ ] Component states implemented and documented
+- [ ] Contrast and keyboard path pass target
+- [ ] Screenshot polish evidence captured for required shells

@@ -56,7 +56,18 @@
 - Accessibility:
 - Observability:
 
-## 6. User Flows
+## 6. Architecture and UX Baseline
+
+- Rendering model: Rails server-rendered
+- Component model: Phlex
+- Client behavior model: Stimulus
+- Navigation/update model: Turbo/Hotwire
+- Native shell integration: Hotwire Native WebView
+- MD3-inspired token system required (color/type/spacing/elevation/motion): Yes/No
+- Custom brand definitions required (palette/typography/illustration): Yes/No
+- Approved deviations and rationale:
+
+## 7. User Flows
 
 ### Flow A
 
@@ -72,21 +83,21 @@
 - Success state:
 - Failure states:
 
-## 7. Constraints and Dependencies
+## 8. Constraints and Dependencies
 
 - Technical constraints:
 - Organizational constraints:
 - Integration dependencies:
 - Compliance requirements:
 
-## 8. Success Metrics
+## 9. Success Metrics
 
 | Metric | Baseline | Target | Timeframe | Owner |
 |---|---|---|---|---|
 |  |  |  |  |  |
 |  |  |  |  |  |
 
-## 9. Rollout Plan
+## 10. Rollout Plan
 
 - Rollout strategy:
 - Feature flags:
@@ -94,14 +105,14 @@
 - Launch criteria:
 - Rollback plan:
 
-## 10. Risks and Mitigations
+## 11. Risks and Mitigations
 
 | Risk | Impact | Likelihood | Mitigation | Owner |
 |---|---|---|---|---|
 |  |  |  |  |  |
 |  |  |  |  |  |
 
-## 11. Open Questions
+## 12. Open Questions
 
 | Question | Owner | Due Date | Status |
 |---|---|---|---|

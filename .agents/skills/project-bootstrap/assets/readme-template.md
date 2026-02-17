@@ -13,10 +13,13 @@ One-paragraph description of what this project does and who it serves.
 
 ## Tech Stack
 
-- Runtime/framework:
+- Runtime/framework: Ruby on Rails (server-rendered)
+- UI components: Phlex
+- Client behavior: Stimulus
+- Navigation/partial updates: Turbo (Hotwire)
+- Native shell integration: Hotwire Native WebView
 - Database:
 - Queue/cache:
-- Frontend:
 - Infra/deploy:
 
 ## Quickstart
@@ -54,7 +57,7 @@ One-paragraph description of what this project does and who it serves.
 
 ## Project Structure
 
-- `app/` or `src/`: application code
+- `app/`: Rails application code, including Phlex components and Stimulus controllers
 - `test/` or `spec/`: tests
 - `docs/`: PRD, sprints, design guidance, brainstorms, solutions
 - `scripts/`: tooling and automation
@@ -71,14 +74,16 @@ One-paragraph description of what this project does and who it serves.
 1. Capture/review requirements in `docs/prd.md`
 2. Plan and track execution in `docs/sprints/`
 3. Implement in small reviewable diffs
-4. Validate with tests and manual checks
+4. Validate with tests and screenshot evidence where applicable
 5. Capture solved learnings in `docs/solutions/`
 
 ## Design and UX
 
 - Source of truth: `docs/design-guidelines.md`
+- Token model: MD3-inspired semantic roles with project-owned brand tokens
+- Required brand artifacts: custom palette, typography, illustration style
+- Verification policy: screenshot-driven polish loop across web and native shells
 - Accessibility target:
-- Responsive policy:
 
 ## Deployment
 

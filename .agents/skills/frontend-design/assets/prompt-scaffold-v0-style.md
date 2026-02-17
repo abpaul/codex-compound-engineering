@@ -11,13 +11,13 @@ Use this scaffold when preparing a frontend design request or execution prompt.
 ## 2) Context of Use
 
 - Who are the users?
-- Where and when is this used? (desktop, mobile, high-stress workflow, quick task)
+- Which shells are in scope? (desktop web, mobile web, iOS native shell, Android native shell)
 - What content/data density does the interface need?
 
 ## 3) Constraints and Taste
 
-- Technical constraints (stack, component library, perf budget)
-- Design constraints (brand colors, typography limits, accessibility target)
+- Technical constraints (Rails/Phlex/Stimulus/Turbo/Hotwire Native)
+- Design constraints (brand palette, typography, illustration style, accessibility target)
 - Visual taste anchors:
   - examples to emulate
   - examples to avoid
@@ -25,8 +25,9 @@ Use this scaffold when preparing a frontend design request or execution prompt.
 
 ## Output Requirements
 
-- tokenized color system
-- typography scale and pairings
-- responsive behavior
+- MD3-inspired semantic token system (color/type/space/elevation/motion)
+- reusable Phlex component API plan
+- responsive behavior across browser + native shell WebViews
 - interaction states (hover/focus/active/disabled/loading/error)
+- screenshot polish loop evidence plan
 - concise rationale for major design decisions

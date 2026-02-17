@@ -14,12 +14,17 @@ Use this skill for implementation review before merge, especially after UI chang
 
 ## Checklist
 
+- Rails/Phlex render flow regressions (partial updates, component API misuse)
 - DOM lifecycle/timing hazards
 - Async race conditions and stale state updates
 - Event listener cleanup and resource leaks
 - Type safety and unsafe casts
+- Stimulus controller lifecycle and target/value wiring issues
+- Turbo Drive/Frames/Streams navigation regressions
+- Hotwire Native WebView interaction compatibility issues
 - Accessibility and keyboard interaction regressions
 - Contrast and token usage regressions in updated UI
+- Ad-hoc styling regressions (raw values, inline styles, one-off overrides)
 - Missing interactive states (hover/focus/disabled/loading/error)
 - Visual consistency drift from declared design memory/tokens
 

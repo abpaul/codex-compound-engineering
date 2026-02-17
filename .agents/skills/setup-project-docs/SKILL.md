@@ -27,6 +27,7 @@ your-project/
    - be generated fresh with equivalent baseline rules.
 3. `AGENTS.md` must include a complete "Available Skills" section that lists all skills currently installed/available to the project.
 4. Sprint-first structure is mandatory: use `docs/sprints/` (not split `docs/plans/` + `todos/`).
+5. Starter docs must reflect the default architecture baseline: Rails server-rendered + Phlex + Stimulus + Turbo/Hotwire Native + token-first design system.
 
 ## Inputs
 
@@ -44,6 +45,7 @@ your-project/
    - Prefer copying `${CODEX_HOME:-~/.codex}/AGENTS.md` when available.
    - If no global file exists, generate from the bundled baseline conventions.
    - Add project-specific sections (repo map, commands, risk areas).
+   - Include project architecture defaults and approved deviations if known.
    - Build/update "Available Skills" from `.agents/skills/*/SKILL.md` metadata.
 4. Create a starter sprint doc if none exists:
    - `docs/sprints/YYYY-MM-DD-sprint-001-bootstrap.md`

@@ -1,42 +1,67 @@
-# Palette Spec Template
+# Token Spec Template (MD3-inspired, brand-custom)
 
-Use this template to define a distinctive, accessible palette before coding.
+Use this template to define a project-owned visual language before coding. MD3 role names are structural references only.
 
-## Palette Identity
+## Brand Identity Inputs
 
 - Direction name:
 - Tone keywords (3-5):
+- Illustration style (line/shape/texture/mood):
 - Rationale:
 
-## Core Tokens
+## Color Roles (semantic)
 
-- `--color-surface`
-- `--color-surface-elevated`
-- `--color-text-primary`
-- `--color-text-secondary`
-- `--color-accent`
-- `--color-border`
-- `--color-success`
-- `--color-warning`
-- `--color-danger`
+- `color.primary`
+- `color.onPrimary`
+- `color.primaryContainer`
+- `color.onPrimaryContainer`
+- `color.secondary`
+- `color.tertiary`
+- `color.surface`
+- `color.surfaceContainer`
+- `color.surfaceContainerHigh`
+- `color.onSurface`
+- `color.outline`
+- `color.success` / `color.warning` / `color.error`
 
-## Interactive States
+## Type Roles
 
-- `--color-accent-hover`
-- `--color-accent-active`
-- `--color-focus-ring`
-- `--color-disabled`
+- `type.displayLarge`
+- `type.headlineMedium`
+- `type.titleLarge`
+- `type.bodyMedium`
+- `type.labelLarge`
+
+## Layout + Depth Roles
+
+- `space.*` scale definition:
+- `elevation.level0..level5` usage notes:
+- `shape.corner*` family notes:
+
+## Motion Roles
+
+- `motion.duration.short/medium/long`
+- `motion.easing.standard/emphasized`
+- Reduced-motion fallback behavior:
+
+## Interactive State Layers
+
+- `state.hover`
+- `state.pressed`
+- `state.focus`
+- `state.disabled`
 
 ## Contrast Checks
 
 | Pair | Target | Result |
 |---|---|---|
-| text-primary on surface | 4.5:1+ | |
-| text-secondary on surface | 4.5:1+ | |
-| accent on surface | 3:1+ for UI components, 4.5:1+ for text | |
-| focus ring on surface | clearly visible | |
+| `onSurface` on `surface` | 4.5:1+ | |
+| `onPrimary` on `primary` | 4.5:1+ | |
+| Focus indicator on `surface` | 3:1+ | |
+| Semantic status text on container | 4.5:1+ | |
 
 ## Notes
 
-- Prefer semantic token names over component-specific hardcoded colors.
-- Prefer derived state colors from core tokens instead of independent random values.
+- Use semantic role names; do not define component-specific one-off colors.
+- Derive interactive states from role tokens instead of arbitrary manual values.
+- Record how illustration style aligns with palette/type/motion direction.
