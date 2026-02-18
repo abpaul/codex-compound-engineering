@@ -10,16 +10,22 @@ Score each screen. Fix the highest-impact token issues first.
 - Visible style drift between browser and native shell screenshots
 - Random spacing values outside the scale
 - Inconsistent component state behavior across the screen
+- No clear primary action (everything is equally loud)
+- “Novelty breaks usability” (missing labels, unfamiliar patterns, unclear affordances)
+- Overuse of expressive tactics (too many competing “hero moments”)
+- Motion that delays interaction or ignores reduced-motion
 
 ## Scoring (100 points)
 
 1. **Hierarchy via type tokens (20)**
    - Title/primary action obvious without color
    - 3–6 type roles used, consistently
+   - Emphasized type styles used sparingly for key actions/info
    - Body readability is comfortable
 
 2. **Grouping via surface roles (20)**
    - `surface` vs `surfaceContainer*` used consistently for meaning
+   - Containment/grouping makes “what’s related” obvious
    - Figure–ground is clear without heavy shadows
    - Overlays feel above content (scrim + elevation)
 
@@ -31,6 +37,7 @@ Score each screen. Fix the highest-impact token issues first.
 4. **State feedback (20)**
    - Hover/press/focus/disabled states exist and match across components
    - State layers are visible but restrained
+   - Motion/shape morph reinforces state changes (and respects reduced motion)
    - Disabled states preserve legibility and meaning
 
 5. **Elevation discipline (10)**
@@ -40,6 +47,7 @@ Score each screen. Fix the highest-impact token issues first.
 
 6. **Brand-custom premium feel (10)**
    - Brand shows through tokens (seed/tones/type/shape), not one-offs
+   - 1–2 intentional “hero moments”; everything else calm/predictable
    - Looks intentional, not like stock component defaults
 
 ## Token-level fix heuristics
@@ -50,3 +58,5 @@ When a score is low, prefer these fixes:
 - Too flat/confusing → increase surface role contrast, add outlineVariant, reserve a single overlay elevation for dialogs/menus.
 - Poor hierarchy → remap roles (`headlineSmall`/`titleLarge`) and increase whitespace at section boundaries.
 - Weak affordances → strengthen state layer contrast and add explicit focus ring token.
+- Too bland/sterile → add a single hero moment (1–2 tactics), increase shape variety, add emphasized type for the primary action, introduce subtle spring-like motion.
+- Too chaotic → remove competing emphases, restore labels/patterns, reduce tactics to 2–3 per surface, keep motion minimal and purposeful.

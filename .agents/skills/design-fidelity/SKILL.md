@@ -20,6 +20,7 @@ Use this skill after implementation exists and you need tighter visual/interacti
    - layout/spacing
    - typography
    - token/contrast behavior
+   - Tailwind/daisyUI layering fidelity to project semantic tokens and brand overrides
    - interaction states
 4. Apply corrections in small batches and re-check with screenshots.
 

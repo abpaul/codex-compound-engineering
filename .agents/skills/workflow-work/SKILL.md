@@ -14,9 +14,12 @@ description: "Execute plans into production-ready code with task tracking, incre
    - encode dependencies directly in the sprint doc
 4. Preserve architecture baseline while implementing:
    - Rails server-rendered responses
-   - Phlex reusable components
+   - Phlex reusable components (composable primitives with controlled variants)
    - Stimulus behavior
    - Turbo/Hotwire Native-compatible navigation
+   - Tailwind + daisyUI layered through project semantic tokens only
+   - custom brand palette/fonts/illustration mapped to semantic tokens
+   - no default daisyUI theme shipped unchanged
    - tokenized styling (no ad-hoc visual patches)
 5. Implement in small logical increments.
 6. Run focused tests/lint after each increment.

@@ -31,6 +31,27 @@ This file is intended to be used as a global `AGENTS.md` for Codex across device
 - Use smaller models for cost-sensitive, low-risk iterations (`gpt-5.1-codex-mini`).
 - Use long-horizon alternatives only when necessary for extended agentic tasks (`gpt-5.1-codex-max`).
 
+## Unified Product Direction
+
+- This direction is mandatory for all current and future apps.
+- Build fast, server-rendered Rails apps as the default.
+- Use Phlex for structured, reusable UI components.
+- Use Stimulus for lightweight behavior, with Turbo/Hotwire Native for seamless web-to-mobile integration.
+- Use Tailwind + daisyUI for delivery speed, but always through a first-party token system:
+  - semantic colors
+  - typography scale
+  - spacing
+  - radii
+  - elevation
+  - motion
+- Every project defines custom brand palette, fonts, and illustration language mapped to semantic tokens.
+- Override daisyUI themes as needed; never ship default daisyUI themes as-is.
+- Use Material Design 3 as a structural reference for anatomy, states, accessibility, and interaction discipline.
+- Do not copy Material Design 3 visual identity.
+- Build components as reusable, composable Phlex primitives with controlled variants.
+- Avoid ad-hoc styling outside tokens.
+- Run a screenshot-driven polish loop before release to ensure calm, consistent, production-ready UI across web and native shells.
+
 ## Rails (Primary)
 
 - Keep controllers thin and push domain behavior into models or focused POROs when needed.
@@ -67,6 +88,10 @@ This file is intended to be used as a global `AGENTS.md` for Codex across device
 - Always prefer canonical workflow skills (`$workflow-*`) over historical `$workflows-*` names.
 - Keep `docs/sprints/` as the single source of truth for plan + task execution.
 - Document durable learnings in `docs/solutions/` immediately after fixes are verified.
+- Apply Rails catalog segmentation from `.agents/references/catalog.md`:
+  - prefer `rails_catalog: core` for implementation work
+  - use `rails_catalog: workflow` for orchestration/review/research support
+  - treat external user/global skills as out-of-catalog unless they define Rails integration explicitly
 - Follow token discipline:
   - load only required skill references first (progressive disclosure)
   - prefer `fast` mode and escalate to `deep` only when quality/risk demands it
@@ -126,12 +151,14 @@ The repository ships with these skills. Use the "use when" guidance to route qui
 | `$workflow-autonomous` | Running discovery->compound pipeline with minimal handoffs | Coordinated multi-step workflow |
 | `$research-local` | Understanding local patterns/history first | File-referenced research notes |
 | `$research-external` | Pulling external best practices/docs | External references + recommendations |
+| `$conversion-optimization` | Evidence-tiered CRO experiments (layout + copy) | Hypotheses + variants + experiment-ready test plan |
 | `$review-security-performance` | Security/performance-sensitive changes | Risk findings and mitigations |
 | `$review-data-release` | Migrations/backfills/data-shape changes | Deployment safety checklist |
 | `$review-frontend-quality` | Frontend lifecycle/race/type-risk review | Frontend quality findings |
 | `$review-comment-resolution` | Resolving PR/review follow-up backlog | Batched resolution plan |
 | `$bug-investigation` | Reproducing and isolating bugs | Repro steps + likely root cause |
 | `$frontend-design` | Building production-grade UI fast | Implemented UI + design rationale |
+| `$material3-ui-craft` | Token-grounded premium UI using Material Design 3 (web + mobile) | Theme contract + component/state rules + screenshot rubric loop |
 | `$frontend-ship` | Orchestrating frontend design->review->evidence in one flow | End-to-end frontend delivery summary |
 | `$design-fidelity` | Closing gaps between design intent and implementation | Diff/fix recommendations |
 | `$agent-native-suite` | Designing/auditing agent-native capabilities | Agent parity audit + design guidance |

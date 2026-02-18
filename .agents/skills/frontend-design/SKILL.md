@@ -14,6 +14,9 @@ Use this skill for new UI surfaces, redesigns, and visual refactors in a Rails-f
 - Stimulus provides client-side behavior.
 - Turbo Drive/Frames/Streams power navigation and partial updates.
 - Hotwire Native shells reuse the same routes/components via WebView.
+- Tailwind + daisyUI accelerate delivery but must be layered through project semantic tokens.
+- Each project defines custom brand palette, fonts, and illustration language mapped to semantic tokens.
+- daisyUI themes are overrideable inputs; default themes must not ship unchanged.
 - MD3 is a reference system for tokens/anatomy/interaction, not a visual skin.
 
 ## Modes
@@ -38,14 +41,15 @@ Use `assets/mode-matrix.md` for mode routing.
 2. If coverage is insufficient, ask one question at a time from the checklist.
 3. Draft prompt scaffold using `assets/prompt-scaffold-v0-style.md`.
 4. Define custom palette, typography, and illustration direction mapped to MD3-inspired semantic tokens using `assets/palette-spec-template.md`.
-5. Define/update reusable Phlex component APIs before screen assembly.
-6. Implement component-by-component with Stimulus/Turbo behavior integration.
-7. Persist style decisions in `docs/design-memory.md` using `assets/design-memory-template.md`.
-8. Run anti-default gate before handoff:
+5. If using M3 Expressive tactics, pick 2–3 tactics per surface and define 1–2 “hero moments” max (everything else stays calm/predictable).
+6. Define/update reusable Phlex component APIs before screen assembly.
+7. Implement component-by-component with Stimulus/Turbo behavior integration.
+8. Persist style decisions in `docs/design-memory.md` using `assets/design-memory-template.md`.
+9. Run anti-default gate before handoff:
    - signature element exists
    - default patterns rejected
    - swap/squint checks pass
-9. Run screenshot-driven polish loop for browser and native shell surfaces.
+10. Run screenshot-driven polish loop for browser and native shell surfaces.
 
 ## Deep Mode Add-ons
 
@@ -67,9 +71,11 @@ When mode is `deep`, also require:
 - Avoid generic templates
 - No ad-hoc styling in views/components (raw hex, one-off spacing, inline style attributes)
 - Use tokenized color/type/spacing/elevation/motion roles
+- Ensure daisyUI utility/component usage resolves through shared semantic tokens
 - Include loading/empty/error/disabled/focus states
 - Maintain keyboard accessibility and reduced-motion support
 - Ensure visual consistency across browser and Hotwire Native shells
+- Prefer expressive clarity over novelty: don’t break familiar patterns or remove labels if it harms recognition.
 
 ## References
 

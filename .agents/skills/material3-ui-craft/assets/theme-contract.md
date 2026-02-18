@@ -8,10 +8,11 @@ Keep the M3 role model, but customize via tokens:
 
 - **Seed color(s)**: choose a brand primary seed; use `tertiary` for a personality accent.
 - **Type**: pick a high-quality font and map it to the full type scale (don’t mix arbitrary weights).
+- **Type emphasis (Expressive)**: allow tokenized emphasized styles for brief editorial moments (headlines/primary actions), used sparingly.
 - **Illustration**: define a product-specific style direction and map it to tokenized constraints.
-- **Shape**: choose a dominant corner family and use it consistently across components.
+- **Shape**: choose a dominant corner family and use it consistently across components; optionally adopt a small “shape library” for decorative masks and shape morph moments.
 - **Surface character**: tune `surface*` roles (cool vs warm neutrals) to match product tone.
-- **Motion**: tune durations/easing for your archetype (calm SaaS vs expressive game shell), while respecting reduced-motion.
+- **Motion**: tune durations/easing for your archetype (calm SaaS vs expressive game shell), while respecting reduced-motion; optionally define spring tokens for spatial/effect motion.
 
 ## 1) Theme object schema (TypeScript)
 
@@ -170,6 +171,19 @@ export interface Md3MotionTokens {
     emphasizedDecelerate: string;
     emphasizedAccelerate: string;
   };
+  // Optional: physics-based motion tokens (Expressive). Map to platform primitives.
+  spring?: {
+    spatial: Md3SpringToken;
+    effects: Md3SpringToken;
+  };
+}
+
+export interface Md3SpringToken {
+  // Keep these as tokens; implementation is platform-specific.
+  mass: number;
+  stiffness: number;
+  damping: number;
+  initialVelocity: number;
 }
 
 export interface Md3IllustrationTokens {

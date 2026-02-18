@@ -28,6 +28,8 @@ your-project/
 3. `AGENTS.md` must include a complete "Available Skills" section that lists all skills currently installed/available to the project.
 4. Sprint-first structure is mandatory: use `docs/sprints/` (not split `docs/plans/` + `todos/`).
 5. Starter docs must reflect the default architecture baseline: Rails server-rendered + Phlex + Stimulus + Turbo/Hotwire Native + token-first design system.
+6. Starter docs must encode styling policy: Tailwind + daisyUI are allowed as acceleration layers only through project-owned semantic tokens (color/type/spacing/radii/elevation/motion); default daisyUI themes must not ship unchanged.
+7. Starter docs must encode UI policy: MD3 is structural reference only, Phlex primitives must be reusable/composable with controlled variants, and screenshot-driven polish is required for UI releases.
 
 ## Inputs
 

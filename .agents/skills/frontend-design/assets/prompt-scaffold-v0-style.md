@@ -6,6 +6,7 @@ Use this scaffold when preparing a frontend design request or execution prompt.
 
 - What are we building? (page, flow, component set)
 - What is the core user action on this surface?
+- Is there a “hero moment” we should emphasize (max 1–2 per product)?
 - What should users feel when they use it?
 
 ## 2) Context of Use

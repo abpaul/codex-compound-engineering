@@ -37,4 +37,5 @@ If no shell coverage is provided, include desktop + mobile web at minimum and fl
 - Do not preload all design references.
 - Load only the assets needed by current mode.
 - Escalate from `fast` to `deep` only when required.
+- Ensure Tailwind + daisyUI are token-layered and default daisyUI themes are not shipped unchanged.
 - Reject ad-hoc styling that bypasses shared tokens/components.

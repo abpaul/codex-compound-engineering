@@ -36,6 +36,7 @@ State implementation rules:
 - Focus must be visibly indicated beyond subtle overlays.
 - Disabled state preserves legibility and target sizing.
 - Keep outlines stable across states unless the spec explicitly changes them.
+- If using expressive motion/shape morph, keep it token-driven and respect reduced-motion preferences.
 
 ## Phlex API contract template
 

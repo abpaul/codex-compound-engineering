@@ -1,6 +1,13 @@
 # Sources (Material Design 3 grounding)
 
-Accessed: 2026-02-16.
+Accessed: 2026-02-17.
+
+## M3 Expressive (guidance + research)
+
+- Start building with Material 3 Expressive (components, motion physics, type, shapes, tactics): https://m3.material.io/blog/building-with-m3-expressive
+- Expressive Design: Google’s UX research behind M3 Expressive: https://design.google/library/expressive-material-design-google-research
+- Foundations: Usability (includes “Applying M3 Expressive” tactics + best practices): https://m3.material.io/foundations/usability
+- Material Design 3 guidelines hub: https://m3.material.io/
 
 ## Foundations (tokens/spec concepts)
 

@@ -18,6 +18,7 @@ Use this skill to gather visual and interaction evidence for frontend work.
 - screenshots and DOM checks
 - branch/PR-focused browser regression checks
 - desktop + mobile viewport capture for changed screens
+- token/theme assertions where relevant (including no default daisyUI theme leaks)
 - optional accessibility smoke checks (focus navigation, obvious contrast failures)
 
 Use `smoke` by default unless risk is high or the user requests full coverage.

@@ -76,6 +76,17 @@ Recommended tuning ranges:
 - Habit/journaling: body can increase 1px; increase line-height for long-form comfort.
 - Game shell: titles can increase 1–2px; keep labels crisp for buttons/chips.
 
+## Emphasized typography (Expressive)
+
+Some M3 Expressive guidance introduces **emphasized** type styles meant to create brief editorial moments and reinforce hierarchy.
+
+Rules of thumb:
+
+- Treat emphasis as a **tokenized variant** (not ad-hoc weight tweaks).
+- Use emphasis primarily for **headlines** and **primary actions**.
+- Per screen: keep emphasis rare (often 1–2 emphasized elements); too much feels noisy and harms scan.
+- Validate readability (contrast, long strings, small screens) and ensure it still works in reduced-motion / low-attention contexts.
+
 ## Shape (corner tokens)
 
 Use shape tokens (dp/px) and keep a single “dominant” corner across a product:
@@ -94,6 +105,14 @@ Rules:
 
 - Use `cornerFull` only for pills/chips/avatars where the geometry is intentional.
 - Cards/dialogs should usually be `cornerLarge` or `cornerExtraLarge` (brand-dependent).
+
+## Expressive shapes (library + morph)
+
+If you adopt a broader shape library (beyond corner radii), treat it as **decorative + attentional**:
+
+- Define a small set of reusable shape roles (e.g., avatar crop, hero media mask, progress ornament) and map them to platform implementations.
+- Use shape morph to reinforce **state changes** and **transitions** (selected, expanded, in-progress), not as constant decoration.
+- Respect reduced-motion: shape morph should degrade to a simple state change without losing meaning.
 
 ## State layers (interaction feedback)
 
@@ -170,3 +189,12 @@ easing.standardAccelerate  = cubic-bezier(0.4, 0, 1, 1)
 easing.emphasized*         = map to your platform’s emphasized tokens if available;
                             otherwise set equal to the nearest `standard*` curve.
 ```
+
+## Spring motion (Expressive)
+
+If your platform supports physics-based motion, define spring tokens and use them consistently:
+
+- `spring.spatial`: movement/resize/position changes (clear, predictable, “physical”)
+- `spring.effects`: color/opacity/blur changes (smooth and unobtrusive)
+
+Implementation varies by platform; keep the *intent* stable: motion should improve clarity and feel responsive, not slow down completion.

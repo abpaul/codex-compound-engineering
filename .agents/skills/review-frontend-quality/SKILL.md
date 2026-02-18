@@ -24,6 +24,7 @@ Use this skill for implementation review before merge, especially after UI chang
 - Hotwire Native WebView interaction compatibility issues
 - Accessibility and keyboard interaction regressions
 - Contrast and token usage regressions in updated UI
+- Tailwind/daisyUI usage bypassing semantic tokens or shipping default daisyUI themes unchanged
 - Ad-hoc styling regressions (raw values, inline styles, one-off overrides)
 - Missing interactive states (hover/focus/disabled/loading/error)
 - Visual consistency drift from declared design memory/tokens

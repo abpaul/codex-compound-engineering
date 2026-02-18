@@ -19,6 +19,10 @@ description: "Apply Rails-first server-rendered architecture conventions with Ph
 - Use Stimulus for client-side behavior; keep each controller focused on one responsibility.
 - Use Turbo Drive/Frames/Streams for navigation and partial updates.
 - Keep mobile shells aligned with Hotwire Native navigation patterns and route structure.
+- Use Tailwind + daisyUI only through project-owned semantic tokens (color/type/spacing/radii/elevation/motion).
+- Define project-specific palette, fonts, and illustration language as semantic token inputs.
+- Override daisyUI themes as needed and never ship framework defaults unchanged.
+- Use MD3 as structural guidance for anatomy/states/accessibility/interaction, not as visual identity.
 
 ## Workflow
 
@@ -35,3 +39,4 @@ description: "Apply Rails-first server-rendered architecture conventions with Ph
 - Map color/type/spacing/elevation/motion decisions to shared tokens.
 - Component APIs expose semantic variants/sizes/states, not raw class override hooks.
 - Every interactive surface defines focus, disabled, loading, and error behavior.
+- Capture screenshot-polish evidence for changed UI surfaces across required web/native shells.

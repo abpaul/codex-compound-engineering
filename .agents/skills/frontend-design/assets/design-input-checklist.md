@@ -22,11 +22,12 @@ Use this checklist before writing UI code.
 1. Which screen(s) should this redesign target first?
 2. Which shells must ship together (desktop web, mobile web, iOS native shell, Android native shell)?
 3. Give 3-5 adjectives for the intended visual tone.
-4. What brand colors must be used or avoided?
-5. What typography constraints exist (families, licensing, weights)?
-6. What illustration style should we follow?
-7. Is WCAG AA sufficient, or do you need stricter accessibility requirements?
-8. Should motion be expressive, subtle, or reduced by default?
+4. Are there 1–2 “hero moments” we should emphasize, and what should stay calm/predictable?
+5. What brand colors must be used or avoided?
+6. What typography constraints exist (families, licensing, weights)?
+7. What illustration style should we follow?
+8. Is WCAG AA sufficient, or do you need stricter accessibility requirements?
+9. Should motion be expressive, subtle, or reduced by default?
 
 ## Minimum Data Threshold
 

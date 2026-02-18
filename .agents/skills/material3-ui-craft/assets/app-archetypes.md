@@ -2,6 +2,8 @@
 
 Use these presets to stay coherent across product types while still feeling brand-custom and premium.
 
+Expressive posture varies by archetype. Decide where the product gets “loud” (1–2 hero moments) vs calm and predictable (most screens), and always bias toward clarity for high-trust flows.
+
 ## 1) SaaS dashboards + forms (`saas-dense`)
 
 Goal: data-dense, calm, trustworthy.
@@ -48,4 +50,3 @@ Avoid:
 
 - Corporate “form UI everywhere” (overuse of outlined fields, dense tables, heavy dividers)
 - Excessive animation that delays interaction
-

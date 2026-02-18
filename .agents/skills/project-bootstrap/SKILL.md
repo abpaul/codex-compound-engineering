@@ -13,7 +13,12 @@ Use this skill to set up project docs and produce comprehensive foundation docum
 - Phlex for all reusable UI components.
 - Stimulus for client-side behavior.
 - Turbo/Hotwire Native for navigation and mobile WebView integration.
+- Tailwind + daisyUI as implementation accelerators layered on project-owned semantic tokens (color/type/spacing/radii/elevation/motion).
+- Define custom brand palette, fonts, and illustration language and map them into semantic tokens.
+- Override daisyUI themes as needed; never ship default themes unchanged.
 - MD3-inspired token system for color/type/spacing/elevation/motion, with custom project palette/type/illustration.
+- MD3 is structural guidance (anatomy/states/accessibility/interaction), not visual identity.
+- UI must ship as composable Phlex primitives with controlled variants and screenshot-polish verification.
 
 ## Workflow
 

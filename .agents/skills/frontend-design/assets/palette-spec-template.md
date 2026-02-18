@@ -44,6 +44,12 @@ Use this template to define a project-owned visual language before coding. MD3 r
 - `motion.easing.standard/emphasized`
 - Reduced-motion fallback behavior:
 
+## Expressive Tactics (optional)
+
+- Tactics to use (pick 2–3): shape variety, rich color contrast, emphasized typography, containment, spring-like motion, component flexibility
+- Hero moment(s) (max 1–2):
+- Calm zones (where we intentionally avoid emphasis):
+
 ## Interactive State Layers
 
 - `state.hover`
